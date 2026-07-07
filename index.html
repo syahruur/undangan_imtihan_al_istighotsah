@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Undangan Digital Resmi Pondok Pesantren Al-Istighotsah Assalafi Setu Bekasi. Hadirilah acara Imtihan Akhirussanah pada Minggu, 12 Juli 2026.">
+    <meta name="keywords"
+        content="Undangan Digital, Pondok Pesantren, Al-Istighotsah Assalafi, Setu Bekasi, Kyai Uci Sanusi">
+    <meta name="author" content="Pondok Pesantren Al-Istighotsah Assalafi">
+    <title>Undangan Digital - Pondok Pesantren Al-Istighotsah Assalafi Setu Bekasi</title>
+
+    <!-- Google Fonts: Cinzel (Header Premium), Montserrat (Teks Bersih), Amiri (Kaligrafi Arab) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons for Beautiful UI Elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Swaying Lanterns (Decorative SVG) -->
+    <div class="lantern-wrapper left-lantern">
+        <svg viewBox="0 0 50 150" class="lantern-svg">
+            <line x1="25" y1="0" x2="25" y2="70" stroke="#d97706" stroke-width="1.5" />
+            <path d="M15,70 L35,70 L40,95 L25,110 L10,95 Z" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <rect x="20" y="80" width="10" height="15" fill="#f59e0b" filter="drop-shadow(0 0 5px #fbbf24)" />
+            <circle cx="25" cy="70" r="3" fill="#d97706" />
+            <path d="M25,110 L25,130" stroke="#d97706" stroke-width="1" />
+            <circle cx="25" cy="130" r="2" fill="#d97706" />
+        </svg>
+    </div>
+    <div class="lantern-wrapper right-lantern">
+        <svg viewBox="0 0 50 150" class="lantern-svg">
+            <line x1="25" y1="0" x2="25" y2="80" stroke="#d97706" stroke-width="1.5" />
+            <path d="M15,80 L35,80 L40,105 L25,120 L10,105 Z" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <rect x="20" y="90" width="10" height="15" fill="#f59e0b" filter="drop-shadow(0 0 5px #fbbf24)" />
+            <circle cx="25" cy="80" r="3" fill="#d97706" />
+            <path d="M25,120 L25,140" stroke="#d97706" stroke-width="1" />
+            <circle cx="25" cy="140" r="2" fill="#d97706" />
+        </svg>
+    </div>
+
+    <!-- Loading Screen (Preloader) -->
+    <div id="loader-wrapper">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <img src="logo.jpg" alt="Logo Pondok Pesantren" class="pulse-logo">
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Memuat Undangan Premium...</p>
+        </div>
+    </div>
+
+
+    <!-- Cover Overlay / Halaman Pembuka -->
+    <div id="cover-overlay">
+        <!-- Floating Light Particles / Glow effect inside cover -->
+        <div class="bg-particles"></div>
+
+        <div class="cover-card">
+            <!-- Frame Ornamen Emas Atas -->
+            <div class="gold-ornament top-ornament">
+                <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,0 Q50,20 100,0 L100,20 L0,20 Z" fill="rgba(217, 119, 6, 0.1)"></path>
+                    <path d="M0,10 C30,20 70,20 100,10" stroke="#d97706" stroke-width="0.5" fill="none"></path>
+                    <circle cx="50" cy="12" r="2" fill="#d97706"></circle>
+                </svg>
+            </div>
+
+            <!-- Logo Pondok -->
+            <div class="cover-logo-wrapper">
+                <img src="logo.jpg" alt="Logo Pondok Pesantren Al-Istighotsah Assalafi" class="cover-logo">
+            </div>
+
+            <span class="cover-subtitle">UNDANGAN DIGITAL</span>
+            <h1 class="cover-title">IMTIHAN AKHIRUSSANAH</h1>
+            <p class="cover-pondok-name">Pondok Pesantren Al-Istighotsah Assalafi<br><span class="highlight-gold">Setu -
+                    Bekasi</span></p>
+
+            <div class="cover-guest-section">
+                <p class="guest-label">Kepada Yth. Bapak/Ibu/Saudara :</p>
+                <div class="guest-name-card">
+                    <h2 id="guest-name">Nama Tamu</h2>
+                </div>
+                <p class="guest-note">*Mohon maaf bila ada kesalahan penulisan nama/gelar</p>
+            </div>
+
+            <button id="btn-open-invitation" class="btn-primary ripple-btn">
+                <i class="fas fa-envelope-open-text icon-left"></i> Buka Undangan
+            </button>
+
+            <!-- Frame Ornamen Emas Bawah -->
+            <div class="gold-ornament bottom-ornament">
+                <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,20 Q50,0 100,20 L100,0 L0,0 Z" fill="rgba(217, 119, 6, 0.1)"></path>
+                    <path d="M0,10 C30,0 70,0 100,10" stroke="#d97706" stroke-width="0.5" fill="none"></path>
+                    <circle cx="50" cy="8" r="2" fill="#d97706"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area (Revealed after opening cover) -->
+    <div id="main-content" class="hidden-content">
+        <!-- Floating Light Particles / Glow effect in main content background -->
+        <div class="bg-particles"></div>
+             
+        </section>
+
+        <!-- Section 3: Detail Acara & Countdown -->
+        <section id="acara" class="scroll-animate">
+            <div class="container">
+                <div class="section-title text-center">
+                    <i class="fas fa-calendar-alt title-icon"></i>
+                    <h2>Waktu & Tempat</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Countdown Timer Card -->
+                <div class="countdown-wrapper card-gold-border">
+                    <h3 class="countdown-title">Hitung Mundur Acara</h3>
+                    <div class="countdown-grid">
+                        <div class="countdown-item">
+                            <span id="days" class="countdown-number">00</span>
+                            <span class="countdown-label">Hari</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours" class="countdown-number">00</span>
+                            <span class="countdown-label">Jam</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes" class="countdown-number">00</span>
+                            <span class="countdown-label">Menit</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds" class="countdown-number">00</span>
+                            <span class="countdown-label">Detik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Details Card Grid -->
+                <div class="details-grid">
+                    <!-- Hari & Tanggal -->
+                    <div class="detail-card card-gold-border text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <h3>Hari & Tanggal</h3>
+                        <p class="detail-text">Minggu, 12 Juli 2026</p>
+                    </div>
+
+                    <!-- Waktu -->
+                    <div class="detail-card card-gold-border text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Waktu</h3>
+                        <p class="detail-text">08.00 WIB – Selesai</p>
+                    </div>
+
+                    <!-- Tempat -->
+                    <div class="detail-card card-gold-border text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Tempat</h3>
+                        <p class="detail-text">Pondok Pesantren Al-Istighotsah Assalafi Setu Bekasi</p>
+                        <a href="https://maps.app.goo.gl/mPEMPK1F5jUyGUQp9?g_st=ic" target="_blank"
+                            class="btn-gold ripple-btn btn-maps">
+                            <i class="fas fa-map-marker-alt icon-left"></i> Petunjuk Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="container">
+                <div class="footer-logo-wrapper">
+                    <img src="logo.jpg" alt="Logo Pondok" class="footer-logo">
+                </div>
+                <p class="footer-pondok-name">Pondok Pesantren Al-Istighotsah Assalafi</p>
+                <p class="footer-address">Setu, Bekasi, Jawa Barat, Indonesia</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2026 Pondok Pesantren Al-Istighotsah Assalafi. All Rights Reserved.<br>
+                    <span class="designed-by">Dibuat dengan khidmat sebagai Undangan Digital Premium</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
